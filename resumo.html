@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resumo dos 5 Livros</title>
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<style>
+  :root{
+    --azul:#1e5f8c; --azul-escuro:#123a56; --azul-claro:#e8f2fa;
+    --dourado:#c9a227; --dourado-claro:#f4c542;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; font-family:'Segoe UI', Arial, sans-serif;
+    background:linear-gradient(180deg,#f4f8fb 0%,#e8f2fa 100%);
+    color:#1a2b3c; padding-bottom:40px;
+  }
+  header{
+    background:var(--azul); color:#fff; padding:20px 16px 16px;
+    text-align:center; position:sticky; top:0; z-index:10;
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+  }
+  header a{ color:#dcebf7; text-decoration:none; font-size:14px; }
+  h1{ margin:6px 0 0; font-size:clamp(20px,6vw,26px); }
+  main{ max-width:680px; margin:0 auto; padding:18px 16px; }
+  .livro{
+    background:#fff; border-radius:14px; margin-bottom:16px;
+    box-shadow:0 3px 10px rgba(20,50,80,.08); overflow:hidden;
+    border-left:5px solid var(--azul);
+  }
+  .livro summary{
+    list-style:none; cursor:pointer; padding:16px 18px;
+    display:flex; align-items:center; justify-content:space-between;
+    font-weight:700; font-size:18px; color:var(--azul-escuro);
+  }
+  .livro summary::-webkit-details-marker{ display:none; }
+  .livro summary .num{
+    display:inline-block; background:var(--azul-claro); color:var(--azul);
+    font-size:12px; font-weight:700; padding:3px 9px; border-radius:20px;
+    margin-right:10px;
+  }
+  .livro summary::after{ content:"+"; font-size:22px; color:var(--dourado); }
+  .livro[open] summary::after{ content:"–"; }
+  .conteudo{ padding:0 18px 18px; font-size:15.5px; line-height:1.65; }
+  .conteudo h3{ font-size:14px; color:var(--dourado); text-transform:uppercase; letter-spacing:.5px; margin:14px 0 6px; }
+  .conteudo p{ margin:0 0 10px; }
+  .conteudo ul{ margin:6px 0; padding-left:20px; }
+  .conteudo li{ margin-bottom:5px; }
+  .significado{
+    background:var(--azul-claro); border-radius:10px; padding:10px 14px;
+    font-size:13.5px; color:var(--azul-escuro); margin-top:10px;
+  }
+  .rodape{ text-align:center; font-size:12px; color:#7a8fa3; margin-top:24px; }
+</style>
+</head>
+<body>
+<header>
+  <a href="index.html">← Estudo Bíblico</a>
+  <h1>Resumo dos 5 Livros</h1>
+</header>
+
+<main>
+
+<details class="livro" open>
+  <summary><span><span class="num">1</span>Gênesis</span></summary>
+  <div class="conteudo">
+    <p>Gênesis é o livro das origens: a criação do mundo e do ser humano, a queda no jardim do Éden, o dilúvio e a arca de Noé, a Torre de Babel e o espalhamento dos povos.</p>
+    <h3>Os Patriarcas</h3>
+    <p>A partir do capítulo 12, o foco passa para a história de uma família: Abraão, chamado por Deus para deixar sua terra e se tornar pai de uma grande nação; Isaque, o filho da promessa; Jacó, que luta com o anjo e recebe o nome Israel; e José, vendido pelos irmãos, que se torna governador do Egito e salva sua família da fome.</p>
+    <h3>Temas centrais</h3>
+    <ul>
+      <li>A aliança de Deus com Abraão e seus descendentes</li>
+      <li>A providência divina mesmo em meio a erros humanos</li>
+      <li>O início do povo que se tornará Israel</li>
+    </ul>
+    <div class="significado">Termina com a família de Jacó (12 filhos, futuras 12 tribos) estabelecida no Egito.</div>
+  </div>
+</details>
+
+<details class="livro">
+  <summary><span><span class="num">2</span>Êxodo</span></summary>
+  <div class="conteudo">
+    <p>Séculos depois, os descendentes de Jacó tornaram-se escravos no Egito. Deus levanta Moisés para libertar o povo, através das dez pragas e da travessia do Mar Vermelho.</p>
+    <h3>O Monte Sinai</h3>
+    <p>No deserto, Deus firma uma aliança com Israel no Monte Sinai e entrega os Dez Mandamentos, além de um conjunto extenso de leis civis, sociais e religiosas.</p>
+    <h3>Temas centrais</h3>
+    <ul>
+      <li>A libertação da escravidão (Pêssach/Páscoa)</li>
+      <li>A entrega da Lei (Torá) no Sinai</li>
+      <li>A construção do Tabernáculo, o local de adoração portátil</li>
+    </ul>
+    <div class="significado">"Êxodo" vem do grego e significa "saída". Em hebraico, o livro se chama Shemot ("Nomes").</div>
+  </div>
+</details>
+
+<details class="livro">
+  <summary><span><span class="num">3</span>Levítico</span></summary>
+  <div class="conteudo">
+    <p>Livro voltado principalmente às leis sacerdotais — instruções dadas à tribo de Levi sobre sacrifícios, purificação, e como o povo deveria se aproximar de Deus com santidade.</p>
+    <h3>Destaques</h3>
+    <ul>
+      <li>Os diferentes tipos de sacrifícios e oferendas</li>
+      <li>Leis sobre pureza, alimentação (cashrut) e saúde pública</li>
+      <li>O capítulo 19 traz o mandamento "ama o teu próximo como a ti mesmo"</li>
+      <li>As festas do calendário judaico: Shabat, Pêssach, Shavuot, Sucot, Rosh Hashaná e Iom Kipur</li>
+      <li>O ano sabático e o ano do Jubileu</li>
+    </ul>
+    <div class="significado">Tema central: "Sede santos, porque eu, o Eterno, sou santo" (Lv 19:2).</div>
+  </div>
+</details>
+
+<details class="livro">
+  <summary><span><span class="num">4</span>Números</span></summary>
+  <div class="conteudo">
+    <p>Narra os 40 anos de peregrinação de Israel pelo deserto, entre o Sinai e as portas da Terra Prometida. Recebe esse nome por causa dos dois censos (contagens) do povo, no início e no fim do livro.</p>
+    <h3>Destaques</h3>
+    <ul>
+      <li>O envio dos 12 espias a Canaã e a descrença que gera 40 anos de deserto</li>
+      <li>As murmurações do povo e as respostas de Deus</li>
+      <li>A rebelião de Coré</li>
+      <li>Balaão, o profeta pagão contratado para amaldiçoar Israel, que acaba abençoando o povo</li>
+    </ul>
+    <div class="significado">Em hebraico o livro se chama Bamidbar, "No deserto" — um retrato da jornada de fé em meio às dificuldades.</div>
+  </div>
+</details>
+
+<details class="livro">
+  <summary><span><span class="num">5</span>Deuteronômio</span></summary>
+  <div class="conteudo">
+    <p>São os discursos finais de Moisés à nova geração de Israel, às portas da Terra Prometida, antes de sua morte. Ele revisa a Lei, relembra a história do povo e renova a aliança.</p>
+    <h3>Destaques</h3>
+    <ul>
+      <li>O Shemá: "Ouve, Israel: o Eterno é nosso Deus, o Eterno é Um" (Dt 6:4) — a declaração central da fé judaica</li>
+      <li>Bênçãos e advertências ligadas à obediência da Lei</li>
+      <li>A nomeação de Josué como sucessor de Moisés</li>
+      <li>A morte de Moisés no Monte Nebo, vendo a Terra Prometida à distância</li>
+    </ul>
+    <div class="significado">"Deuteronômio" significa "segunda lei" — uma releitura e renovação da aliança para a nova geração.</div>
+  </div>
+</details>
+
+<div class="rodape">© Irmão Claudio</div>
+</main>
+</body>
+</html>
