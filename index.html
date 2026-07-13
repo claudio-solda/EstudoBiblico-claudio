@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Estudo Bíblico</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="theme-color" content="#1e5f8c">
+<style>
+  :root{
+    --azul:#1e5f8c;
+    --azul-escuro:#123a56;
+    --azul-claro:#e8f2fa;
+    --dourado:#c9a227;
+    --dourado-claro:#f4c542;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:'Segoe UI', Arial, sans-serif;
+    background:linear-gradient(180deg,#f4f8fb 0%,#e8f2fa 100%);
+    color:#1a2b3c;
+    padding-bottom:40px;
+    min-height:100vh;
+  }
+  header{
+    background:linear-gradient(135deg,var(--azul) 0%,var(--azul-escuro) 100%);
+    color:#fff;
+    padding:34px 16px 26px;
+    text-align:center;
+    box-shadow:0 2px 10px rgba(0,0,0,.18);
+  }
+  header svg{ margin-bottom:6px; }
+  h1{
+    margin:6px 0 0;
+    font-size:clamp(24px,7vw,32px);
+    letter-spacing:.5px;
+  }
+  .sub{
+    font-size:13px;
+    color:#dcebf7;
+    margin-top:6px;
+  }
+  main{
+    max-width:640px;
+    margin:0 auto;
+    padding:22px 18px;
+  }
+  .card{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    background:#fff;
+    border-radius:14px;
+    padding:18px 18px;
+    margin-bottom:16px;
+    text-decoration:none;
+    color:inherit;
+    box-shadow:0 3px 10px rgba(20,50,80,.08);
+    border-left:5px solid var(--azul);
+    transition:transform .12s;
+  }
+  .card:active{ transform:scale(.98); opacity:.85; }
+  .card .icone{
+    width:46px;height:46px;flex:0 0 46px;
+    display:flex;align-items:center;justify-content:center;
+    background:var(--azul-claro);
+    border-radius:12px;
+    font-size:22px;
+  }
+  .card .titulo{ font-size:18px; font-weight:700; color:var(--azul-escuro); }
+  .card .desc{ font-size:13px; color:#7a8fa3; margin-top:3px; }
+  .card.dourado{ border-left-color:var(--dourado); }
+  .card.dourado .icone{ background:#fff8e6; }
+  .versiculo{
+    text-align:center;
+    font-size:14px;
+    font-style:italic;
+    color:#5a7286;
+    margin:8px 0 20px;
+    padding:0 10px;
+  }
+  .rodape{
+    text-align:center;
+    font-size:12px;
+    color:#7a8fa3;
+    margin-top:26px;
+  }
+</style>
+</head>
+<body>
+<header>
+  <svg width="46" height="46" viewBox="0 0 64 64">
+    <path d="M32 6 L32 58 M20 14 L44 14 M20 22 L44 22" stroke="#f4c542" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M14 58 C14 40, 20 26, 32 24 C44 26, 50 40, 50 58 Z" fill="none" stroke="#f4c542" stroke-width="2.5"/>
+  </svg>
+  <h1>Estudo Bíblico</h1>
+  <div class="sub">IJEFONT · Irmão Claudio</div>
+</header>
+
+<main>
+  <p class="versiculo">"Estuda para te apresentares a Deus aprovado" — 2 Timóteo 2:15</p>
+
+  <a class="card" href="resumo.html">
+    <div class="icone">📖</div>
+    <div>
+      <div class="titulo">Resumo dos 5 Livros</div>
+      <div class="desc">Gênesis, Êxodo, Levítico, Números e Deuteronômio</div>
+    </div>
+  </a>
+
+  <a class="card dourado" href="parashiot.html">
+    <div class="icone">📅</div>
+    <div>
+      <div class="titulo">Parashiot Semanais</div>
+      <div class="desc">Guia de leitura da Torá por porção semanal</div>
+    </div>
+  </a>
+
+  <a class="card" href="mandamentos.html">
+    <div class="icone">✡️</div>
+    <div>
+      <div class="titulo">Mandamentos e Ensinamentos</div>
+      <div class="desc">Principais preceitos e lições de cada livro</div>
+    </div>
+  </a>
+
+  <div class="rodape">© Irmão Claudio</div>
+</main>
+</body>
+</html>
